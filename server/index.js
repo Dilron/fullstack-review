@@ -30,3 +30,7 @@ app.get('/api/users', ctrl.getUsers)
 app.post('/auth/register', ctrl.register)
 
 app.post('/auth/login', ctrl.login)
+
+app.get('/auth/details', ctrl.getDetails)
+
+

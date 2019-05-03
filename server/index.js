@@ -1,5 +1,5 @@
-const express = require('express')
 require('dotenv').config()
+const express = require('express')
 const app = express()
 const massive = require('massive')
 const session = require('express-session')
@@ -33,4 +33,4 @@ app.post('/auth/login', ctrl.login)
 
 app.get('/auth/details', ctrl.getDetails)
 
-
+app.get('/auth/logout', ctrl.logout)
